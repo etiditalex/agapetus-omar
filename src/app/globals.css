@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-oswald), "Arial Narrow", sans-serif;
+  --color-ink: #29293a;
+  --color-navy: #29293a;
+  --color-deep: #14141c;
+  --color-teal: #71b850;
+  --color-sea: #5ea344;
+  --color-foam: #eef8e6;
+  --color-gold: #71b850;
+  --color-gold-soft: #d9f0c8;
+  --color-sand: #f6f6f8;
+  --color-ivory: #ffffff;
+  --color-muted: #7d7d8c;
+  --color-line: #e6e6ee;
+  --color-danger: #8e3b3b;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.75rem;
+  }
+
+  body {
+    background: var(--color-ivory);
+    color: var(--color-ink);
+    overflow-x: clip;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: #d9f0c8;
+    color: #29293a;
+  }
+
+  :focus-visible {
+    outline: 2px solid #71b850;
+    outline-offset: 3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 80;
+  background: white;
+  color: #14242b;
+  padding: 0.6rem 1rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.hero-portrait-frame {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 42%);
+  mask-image: linear-gradient(to right, transparent, #000 42%);
+}
+
+.hero-portrait {
+  -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent);
+  mask-image: linear-gradient(to bottom, #000 70%, transparent);
+}
+
+@media (min-width: 640px) {
+  .hero-portrait-frame {
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 24%);
+    mask-image: linear-gradient(to right, transparent, #000 24%);
+  }
+}
