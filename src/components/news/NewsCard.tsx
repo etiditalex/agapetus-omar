@@ -13,7 +13,7 @@ export function NewsCard({ article }: { article: NewsArticle }) {
             alt={article.imageAlt}
             fill
             sizes="(min-width: 1024px) 33vw, 100vw"
-            className="object-cover object-top transition duration-700 group-hover:scale-105"
+            className="origin-top object-cover object-top transition duration-700 group-hover:scale-105"
           />
         </div>
         <div className="flex flex-1 flex-col py-4">

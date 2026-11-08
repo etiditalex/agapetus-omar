@@ -60,7 +60,7 @@ export default async function AboutPage() {
             return (
               <article key={chapter.title} className="grid items-center gap-8 lg:grid-cols-[minmax(0,22rem)_1fr]">
                 <div className="relative aspect-[16/10] bg-black/40">
-                  <Image src={photo.image} alt={photo.imageAlt} fill className="object-cover" sizes="360px" />
+                  <Image src={photo.image} alt={photo.imageAlt} fill className="object-cover object-top" sizes="360px" />
                 </div>
                 <div>
                   <p className="text-sm text-white/55">{chapter.period}</p>

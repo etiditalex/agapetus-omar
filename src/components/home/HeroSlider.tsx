@@ -42,7 +42,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
                   priority={itemIndex === 0}
                   quality={90}
                   sizes="100vw"
-                  className="object-cover object-[62%_center]"
+                  className="object-cover object-[62%_top]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-[#121212] via-[#121212]/55 to-transparent" />
               </div>
@@ -52,7 +52,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
                   alt={active ? slide.imageAlt : ""}
                   fill
                   sizes="(min-width: 1024px) 40vw, 38vw"
-                  className="hero-portrait object-cover object-center"
+                  className="hero-portrait object-cover object-top"
                 />
               </div>
               <div className="relative z-[1] flex h-full items-center px-4 pb-8 sm:px-8 sm:pb-12 sm:pr-[42%] lg:pl-16 lg:pr-[44%]">

@@ -69,7 +69,7 @@ export function GalleryBrowser({ items }: { items: GalleryItem[] }) {
               className="group relative aspect-[3/4] overflow-hidden bg-sand text-left"
               onClick={() => setActive(index)}
             >
-              <Image src={item.image} alt={item.imageAlt} fill sizes="(min-width: 1024px) 33vw, 50vw" className="object-cover object-top transition duration-700 group-hover:scale-105" />
+              <Image src={item.image} alt={item.imageAlt} fill sizes="(min-width: 1024px) 33vw, 50vw" className="origin-top object-cover object-top transition duration-700 group-hover:scale-105" />
               <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-white sm:p-4">
                 <span className="block text-[10px] uppercase tracking-[0.16em] text-white/70">{item.category}</span>
                 <span className="mt-1 block text-sm font-semibold leading-tight sm:text-lg">{item.title}</span>

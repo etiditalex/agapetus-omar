@@ -41,7 +41,7 @@ export function SiteFooter({
           <div className="mt-4 grid grid-cols-2 gap-2">
             {gallery.slice(0, 2).map((item) => (
               <Link key={item.id} href="/gallery" className="relative aspect-[4/3] overflow-hidden bg-white">
-                <Image src={item.image} alt={item.imageAlt} fill sizes="180px" className="object-cover" />
+                <Image src={item.image} alt={item.imageAlt} fill sizes="180px" className="object-cover object-top" />
               </Link>
             ))}
           </div>

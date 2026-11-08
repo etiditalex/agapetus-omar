@@ -26,7 +26,7 @@ export function PageHero({
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[center_18%] opacity-50"
+          className="object-cover object-top opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#1c1c1c] from-[28%] via-[#1c1c1c]/88 to-[#1c1c1c]/20" />
         <Container className="relative flex min-h-[16rem] flex-col justify-center py-10 sm:min-h-[20rem] sm:py-14 lg:min-h-[21.5rem]">

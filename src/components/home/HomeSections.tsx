@@ -48,7 +48,7 @@ export function HomeSections({
           <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3">
             {priorities.map((priority) => (
               <Link key={priority.slug} href={`/vision/${priority.slug}`} className="group relative aspect-[4/5] overflow-hidden bg-deep">
-                <Image src={priority.image} alt={priority.imageAlt} fill sizes="(min-width: 768px) 33vw, 50vw" className="object-cover transition duration-700 group-hover:scale-105" />
+                <Image src={priority.image} alt={priority.imageAlt} fill sizes="(min-width: 768px) 33vw, 50vw" className="origin-top object-cover object-top transition duration-700 group-hover:scale-105" />
                 <span className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
                 <span className="absolute inset-x-0 bottom-0 p-3 text-sm font-semibold leading-tight text-white sm:p-4 sm:text-base lg:text-lg">{priority.title}</span>
               </Link>
