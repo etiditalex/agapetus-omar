@@ -2,118 +2,108 @@ import type { Biography } from "@/types/content";
 
 export const biography: Biography = {
   introduction:
-    "Agapetus Omar is presented here as a political leader from Kilifi County, on Kenya’s north coast. The life history below is sample copy for this frontend preview. It is not an official biography.",
-  portraitNote:
-    "Portrait of Agapetus Omar.",
+    "Agapetus Omar is a Kenyan civil engineer, entrepreneur, and community-focused leader. His professional and personal journey reflects a commitment to development, service, and improving people’s lives.",
+  portraitNote: "Civil engineer, entrepreneur, and community advocate. Kilifi North.",
   paragraphs: [
-    "Kilifi’s public life runs through fishing beaches, coconut and cashew farms, market stalls, tourism towns, and rural wards that sit a long way from a tarmac road. This preview site is written for that setting. It does not assign Agapetus Omar a party, an elected office, a university, or a family record, because those details have not been verified for publication.",
-    "The sample profile treats leadership as a habit of showing up: listening at barazas, publishing what was heard, and returning with a plain account of what can and cannot be done. That is a design choice for the website, not a claim about a completed term of office.",
-    "Until an authorised biography is supplied, readers should treat every date, programme name, and personal detail on this website as illustrative. Geographic notes about Kilifi County — its seven sub-counties, its shoreline, and its mix of fishing, farming, and tourism — describe the county, not a personal achievement.",
+    "With a background in civil engineering and leadership experience in the construction industry, Omar has built his professional identity around integrity, responsibility, innovation, and sustainable development.",
+    "As the driving force behind Jaypetus Construction Ltd, he has demonstrated an entrepreneurial spirit and a commitment to a sector that supports infrastructure, employment, and economic growth.",
+    "Beyond his professional career, he is passionate about community empowerment, particularly supporting vulnerable children, expanding educational opportunities, and promoting the welfare of underserved families.",
+    "His aspiration to represent the people of Kilifi North Constituency in the 2027 General Election is rooted in a desire to contribute to a more inclusive, progressive, and opportunity-driven society.",
+    "Guided by the philosophy “Change We Can Believe In,” Omar envisions a Kilifi North where development is inclusive, opportunities are accessible, and leadership is grounded in service to the people.",
   ],
   journey: [
     {
-      period: "Setting, not a dated post",
-      title: "Roots in Kilifi County",
+      period: "Civil engineering",
+      title: "A foundation in civil engineering",
       summary:
-        "A placeholder chapter for where a future biography can locate home, schooling, and the first years of public involvement.",
+        "His professional journey is grounded in civil engineering, a discipline that combines technical knowledge, planning, and practical problem-solving.",
       points: [
-        "Home ward, school, and family details are intentionally left unspecified.",
-        "The coast’s landing sites, farms, and classrooms are the backdrop for the sample story.",
-        "No election result is claimed in this chapter.",
+        "That background shaped his view of reliable infrastructure, proper planning, quality construction, and sustainable development.",
+        "Experience in the built environment showed how roads, water, housing, and public facilities affect daily life.",
+        "For him, engineering is a way to identify problems, develop solutions, and create lasting value.",
       ],
     },
     {
-      period: "Illustrative chapter",
-      title: "Community conversations",
+      period: "Enterprise",
+      title: "Jaypetus Construction Ltd",
       summary:
-        "Sample copy describing the kind of ward-level listening this site is built to document later.",
+        "He extended that expertise into entrepreneurship by leading Jaypetus Construction Ltd.",
       points: [
-        "Youth asking for skills that lead to paid work, not one-day workshops.",
-        "Fishing families asking for fairer landing-site services.",
-        "Parents asking which bursary names were actually reached.",
+        "Steering the company has meant business leadership, coordination, and decisions in the construction industry.",
+        "The work balances technical requirements, finance, people, project expectations, and long-term sustainability.",
+        "It also informs his interest in infrastructure and in policies that let communities and local enterprises take part in growth.",
       ],
     },
     {
-      period: "Illustrative chapter",
-      title: "A public agenda",
+      period: "Community",
+      title: "From professional leadership to community service",
       summary:
-        "A placeholder for the moment a leader writes priorities down and invites correction.",
+        "He recognises that meaningful development must address both physical infrastructure and human welfare.",
       points: [
-        "Six development areas are drafted on the Vision page.",
-        "Each area is framed as a proposal, not a delivered project.",
-        "The record can be replaced with verified milestones in a later phase.",
+        "He has visited orphanages, engaged with vulnerable children, and supported institutions that care for them.",
+        "He has supported the schooling of students facing financial hardship, so circumstances do not decide a child’s future.",
+        "He values listening across the community, because lasting progress needs consultation and shared responsibility.",
       ],
     },
     {
-      period: "This website",
-      title: "An open preview",
+      period: "Kilifi North 2027",
+      title: "Aspiring Member of Parliament",
       summary:
-        "The current chapter is the site itself: a place to review tone, structure, and navigation before any office systems are connected.",
+        "His interest in parliamentary leadership extends his professional and community-service journey to Kilifi North.",
       points: [
-        "News, events, and galleries use local sample records.",
-        "The contact form demonstrates validation only.",
-        "Nothing on this site is stored in a database.",
+        "He believes effective representation needs practical problem-solving, public participation, and accountability.",
+        "He hopes to bring a development-oriented perspective from engineering, construction, and social empowerment.",
+        "The aim is a constituency where infrastructure supports opportunity, education unlocks potential, and vulnerable people are not left behind.",
       ],
     },
   ],
   values: [
     {
-      title: "Dignity",
-      summary:
-        "Public help should leave a person with their name and their standing intact. Queues, lists, and bursaries ought to be explainable.",
+      title: "Service",
+      summary: "Putting community welfare at the heart of leadership.",
       icon: "heart",
     },
     {
-      title: "Participation",
-      summary:
-        "A baraza is useful when the notes come back. People should be able to see whether their point was kept.",
-      icon: "messages",
+      title: "Integrity",
+      summary: "Upholding honesty, transparency, and responsible decision-making.",
+      icon: "shield",
     },
     {
-      title: "Coastal livelihoods",
-      summary:
-        "Fishing, farming, trading, and tourism are one household economy. Policy that helps only one of them is incomplete.",
-      icon: "fish",
-    },
-    {
-      title: "Young people first",
-      summary:
-        "Skills, sport, and first jobs belong in the main agenda, not in a sidebar written after the budget is finished.",
+      title: "Inclusivity",
+      summary: "Recognising the needs and aspirations of all members of society.",
       icon: "users",
     },
     {
-      title: "Care close to home",
-      summary:
-        "A clinic, a water point, and a classroom are the tests of whether a county still remembers its far wards.",
-      icon: "droplets",
+      title: "Empowerment",
+      summary: "Expanding access to education, skills, entrepreneurship, and economic opportunities.",
+      icon: "graduation",
     },
     {
-      title: "Plain integrity",
-      summary:
-        "Say what is known, mark what is not, and do not publish a figure that cannot be opened and checked.",
-      icon: "shield",
+      title: "Sustainable development",
+      summary: "Promoting solutions that create lasting benefits for present and future generations.",
+      icon: "sprout",
     },
   ],
   milestones: [
     {
-      title: "Sample listening circuit",
+      title: "Supporting vulnerable children",
       summary:
-        "An illustrative series of ward conversations. No attendance figure is published because none has been verified.",
+        "Visits to orphanages and support for institutions that give children care, protection, dignity, and a chance to thrive.",
     },
     {
-      title: "Sample livelihood brief",
+      title: "Access to education",
       summary:
-        "A layout for a short public note on fish, coconut, cashew, and market stalls. It is not a funded programme.",
+        "Sponsorship for students facing financial hardship, so a child’s future is not decided by economic circumstances alone.",
     },
     {
-      title: "Sample school-gate clinic",
+      title: "Personal mission",
       summary:
-        "A placeholder format for explaining bursary timelines to parents. It does not award any bursary.",
+        "To serve with integrity, compassion, and responsibility, and to contribute to education, economic empowerment, and a better quality of life.",
     },
     {
-      title: "Sample open notebook",
+      title: "Personal vision",
       summary:
-        "A model for publishing what was asked at a meeting and what remains unanswered. The notebook is empty until real notes exist.",
+        "A progressive, inclusive, and economically empowered Kilifi North, where every person can learn, work, grow, and take part in development.",
     },
   ],
 };

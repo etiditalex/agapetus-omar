@@ -7,7 +7,8 @@ import { getBiography, getGalleryItems } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Placeholder biography, leadership journey, values, and illustrative milestones for Agapetus Omar.",
+  description:
+    "Agapetus Omar is a civil engineer, entrepreneur, and community advocate aspiring to represent Kilifi North in 2027.",
 };
 
 export default async function AboutPage() {
@@ -20,7 +21,7 @@ export default async function AboutPage() {
       <PageHero
         eyebrow="About me"
         title="Agapetus Omar"
-        description="A sample life story for layout review. It is not an official biography and it does not claim an elected office."
+        description="Civil engineer, entrepreneur, and community advocate. Aspiring Member of Parliament for Kilifi North. Building dreams. Building Kilifi North."
         image={hero.image}
         imageAlt={hero.imageAlt}
         crumbs={[
@@ -31,7 +32,7 @@ export default async function AboutPage() {
       <section className="bg-white py-16 sm:py-20">
         <Container className="grid items-start gap-12 lg:grid-cols-2">
           <div>
-            <PlaceholderNote>Placeholder biography</PlaceholderNote>
+            <PlaceholderNote>Kilifi North</PlaceholderNote>
             <h2 className="mt-5 text-3xl font-bold tracking-tight text-ink sm:text-4xl">Overview</h2>
             <p className="mt-6 text-lg leading-8 text-muted">{biography.introduction}</p>
             <div className="mt-5 space-y-4 text-base leading-8 text-muted">
@@ -52,7 +53,7 @@ export default async function AboutPage() {
       <section id="journey" className="scroll-mt-28 bg-[#1c1c1c] py-16 text-white sm:py-20">
         <h2 className="px-4 text-center font-display text-xl uppercase tracking-[0.12em] text-white/70 sm:text-2xl sm:tracking-[0.18em]">Leadership journey</h2>
         <p className="mx-auto mt-3 max-w-2xl px-5 text-center text-sm leading-relaxed text-white/55">
-          Illustrative chapters. Periods are labels for the layout, not a verified timeline.
+          Engineering, entrepreneurship, and a commitment to community service.
         </p>
         <Container className="mt-12 space-y-14">
           {biography.journey.map((chapter, index) => {
@@ -94,8 +95,8 @@ export default async function AboutPage() {
 
       <section className="bg-sand py-16 sm:py-20">
         <Container>
-          <PlaceholderNote>Illustrative milestones</PlaceholderNote>
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-ink sm:text-4xl">Achievements to be verified</h2>
+          <PlaceholderNote>Community</PlaceholderNote>
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-ink sm:text-4xl">Service and vision</h2>
           <div className="mt-10 grid gap-8 md:grid-cols-2">
             {biography.milestones.map((item) => (
               <article key={item.title}>

@@ -18,11 +18,11 @@ const oswald = Oswald({
 
 export const metadata: Metadata = {
   title: {
-    default: "Agapetus Omar | Leadership for Kilifi County",
+    default: "Agapetus Omar | Kilifi North",
     template: "%s | Agapetus Omar",
   },
   description:
-    "Leadership preview for Agapetus Omar of Kilifi County, Kenya. Biography, programmes, and contact details on this site are marked placeholders.",
+    "Agapetus Omar is a civil engineer, entrepreneur, and community advocate aspiring to represent Kilifi North. Building dreams. Building Kilifi North.",
   robots: { index: false, follow: false },
 };
 

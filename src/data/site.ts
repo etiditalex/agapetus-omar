@@ -2,10 +2,10 @@ import type { SiteConfig } from "@/types/content";
 
 export const siteConfig: SiteConfig = {
   name: "Agapetus Omar",
-  role: "Political leader",
-  place: "Kilifi County",
+  role: "Civil engineer and community advocate",
+  place: "Kilifi North",
   summary:
-    "Manifesto 2027 for Agapetus Omar, vying in Kilifi North. Change we can believe in.",
+    "Civil engineer, entrepreneur, and community advocate aspiring to represent Kilifi North. Building dreams. Building Kilifi North.",
   subCounties: [
     "Kilifi North",
     "Kilifi South",
