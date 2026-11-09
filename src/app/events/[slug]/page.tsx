@@ -31,7 +31,7 @@ export default async function EventPage({ params }: { params: Promise<{ slug: st
   return (
     <>
       <PageHero
-        eyebrow={isUpcoming(event.date) ? "Upcoming sample" : "Past sample"}
+        eyebrow={isUpcoming(event.date) ? "Upcoming" : "Past"}
         title={event.title}
         description={event.summary}
         image={event.image}
@@ -45,13 +45,13 @@ export default async function EventPage({ params }: { params: Promise<{ slug: st
       <section className="py-16 sm:py-20">
         <Container>
           <DetailArticle
-            eyebrow="Placeholder engagement"
-            summary={`${when.full} at ${when.time}. This page does not reserve a place.`}
+            eyebrow="Event"
+            summary={`${when.full} at ${when.time}.`}
             paragraphs={event.paragraphs}
             image={event.image}
             imageAlt={event.imageAlt}
             points={event.runningOrder}
-            pointsLabel="Illustrative running order"
+            pointsLabel="Running order"
             meta={[
               { label: "When", value: `${when.full}, ${when.time}` },
               { label: "Where", value: event.venue },
@@ -60,7 +60,7 @@ export default async function EventPage({ params }: { params: Promise<{ slug: st
             ]}
           />
           <div className="mt-14">
-            <h2 className="text-3xl font-bold text-ink">Other sample events</h2>
+            <h2 className="text-3xl font-bold text-ink">Other events</h2>
             <ul className="mt-6 divide-y divide-line border-y border-line">
               {related.map((item) => (
                 <li key={item.slug}>

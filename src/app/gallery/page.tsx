@@ -6,7 +6,7 @@ import { getGalleryItems } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Media gallery",
-  description: "Illustrative photo and video gallery for the Agapetus Omar leadership preview.",
+  description: "Photographs and video from Agapetus Omar.",
 };
 
 export default async function GalleryPage() {
@@ -18,7 +18,7 @@ export default async function GalleryPage() {
       <PageHero
         eyebrow="Gallery"
         title="Photo gallery"
-        description="Open any item for a closer look. Photographs are illustrative. Video files are not hosted in this phase."
+        description="Open any item for a closer look."
         image={hero.image}
         imageAlt={hero.imageAlt}
         crumbs={[

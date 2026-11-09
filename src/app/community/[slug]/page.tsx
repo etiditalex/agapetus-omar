@@ -44,13 +44,13 @@ export default async function InitiativePage({ params }: { params: Promise<{ slu
       <section className="py-16 sm:py-20">
         <Container>
           <DetailArticle
-            eyebrow="Illustrative initiative"
+            eyebrow="Community"
             summary={initiative.status}
             paragraphs={initiative.paragraphs}
             image={initiative.image}
             imageAlt={initiative.imageAlt}
             points={initiative.steps}
-            pointsLabel="How the format would work"
+            pointsLabel="How it works"
             meta={[
               { label: "Area", value: initiative.area },
               { label: "Status", value: initiative.status },

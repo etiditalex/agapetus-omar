@@ -61,7 +61,7 @@ export function SiteFooter({
           </ul>
           <div className="flex gap-2">
             {site.social.map((item) => (
-              <a key={item.label} href={item.href} target="_blank" rel="noreferrer" aria-label={`${item.label} placeholder profile`} className="grid h-9 w-9 place-items-center border border-line hover:text-teal">
+              <a key={item.label} href={item.href} target="_blank" rel="noreferrer" aria-label={item.label} className="grid h-9 w-9 place-items-center border border-line hover:text-teal">
                 <SocialIcon name={item.icon} />
               </a>
             ))}

@@ -66,9 +66,6 @@ export function HomeSections({
         <Container className="grid gap-10 lg:grid-cols-2 lg:gap-12">
           <div>
             <h2 className="text-3xl font-bold text-ink">Follow on social media</h2>
-            <p className="mt-4 max-w-md text-sm leading-relaxed text-muted">
-              These profiles are placeholders. They open example.com and are not live accounts.
-            </p>
             <div className="mt-6 flex gap-3">
               {site.social.map((item) => (
                 <a
@@ -76,7 +73,7 @@ export function HomeSections({
                   href={item.href}
                   target="_blank"
                   rel="noreferrer"
-                  aria-label={`${item.label} placeholder profile`}
+                  aria-label={item.label}
                   className="grid h-11 w-11 place-items-center border border-line text-ink transition hover:border-teal hover:text-teal"
                 >
                   <SocialIcon name={item.icon} />

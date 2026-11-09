@@ -85,7 +85,7 @@ export function EventsExplorer({ events }: { events: CalendarEvent[] }) {
             }}
           >
             <label htmlFor="event-search" className="sr-only">
-              Search sample events
+              Search events
             </label>
             <input
               id="event-search"
@@ -98,7 +98,7 @@ export function EventsExplorer({ events }: { events: CalendarEvent[] }) {
         </div>
       </div>
       <p className="mt-6 text-sm text-muted">
-        {result.total === 0 ? "No sample events match." : `Showing ${result.from}–${result.to} of ${result.total}.`}
+        {result.total === 0 ? "No events match." : `Showing ${result.from}–${result.to} of ${result.total}.`}
       </p>
       <div className="mt-6 divide-y divide-line border-y border-line">
         {result.items.map((event) => {

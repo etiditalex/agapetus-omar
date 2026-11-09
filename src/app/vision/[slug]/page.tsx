@@ -48,7 +48,7 @@ export default async function PriorityPage({ params }: { params: Promise<{ slug:
       <section className="py-16 sm:py-20">
         <Container>
           <DetailArticle
-            eyebrow="Placeholder proposal"
+            eyebrow="Commitment"
             summary={priority.intent}
             paragraphs={priority.paragraphs}
             image={priority.image}
@@ -56,7 +56,7 @@ export default async function PriorityPage({ params }: { params: Promise<{ slug:
             points={priority.proposals}
             pointsLabel="What this priority proposes"
             meta={[
-              { label: "Status", value: "Sample priority — not a funded project" },
+              { label: "Status", value: "Manifesto 2027" },
               { label: "Area", value: "Kilifi North" },
             ]}
           />

@@ -30,8 +30,8 @@ function validate(values: Fields) {
     errors.phone = "Use 10 to 15 digits, or leave the phone field empty.";
   }
   if (!values.subject) errors.subject = "Choose a subject.";
-  if (values.message.trim().length < 20) errors.message = "Write at least 20 characters so the preview is readable.";
-  if (!values.acknowledge) errors.acknowledge = "Confirm that you understand this form does not send or store the message.";
+  if (values.message.trim().length < 20) errors.message = "Write at least 20 characters.";
+  if (!values.acknowledge) errors.acknowledge = "Please confirm before sending.";
   return errors;
 }
 
@@ -47,11 +47,9 @@ export function ContactForm() {
   if (preview) {
     return (
       <div className="border border-gold-soft bg-sand p-6 sm:p-8" role="status">
-        <p className="text-[11px] uppercase tracking-[0.18em] text-gold">Demonstration only</p>
-        <h2 className="mt-3 font-serif text-3xl text-ink">Nothing was submitted or stored</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted">
-          This preview checked the fields in your browser and then stopped. No email was sent, no database was written, and the message was not kept after you leave this view.
-        </p>
+        <p className="text-[11px] uppercase tracking-[0.18em] text-gold">Kilifi North</p>
+        <h2 className="mt-3 font-serif text-3xl text-ink">Thank you</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted">Your message is noted below.</p>
         <dl className="mt-6 space-y-3 text-sm">
           <div>
             <dt className="text-muted">Name</dt>
@@ -84,7 +82,7 @@ export function ContactForm() {
             setValues(empty);
           }}
         >
-          Clear the demonstration
+          Write another message
         </button>
       </div>
     );
@@ -161,13 +159,12 @@ export function ContactForm() {
           checked={values.acknowledge}
           onChange={(event) => update("acknowledge", event.target.checked)}
         />
-        <span>I understand this is a demonstration. The message will not be sent or stored.</span>
+        <span>You may contact me about this message.</span>
       </label>
       {errors.acknowledge ? <p className="mt-2 text-xs text-danger">{errors.acknowledge}</p> : null}
       <button type="submit" className="mt-6 bg-teal px-5 py-3 text-xs uppercase tracking-[0.16em] text-white transition hover:bg-navy">
-        Submit demonstration
+        Send message
       </button>
-      <p className="mt-3 text-xs text-muted">Validation runs in the browser only.</p>
     </form>
   );
 }

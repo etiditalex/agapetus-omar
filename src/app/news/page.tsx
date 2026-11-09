@@ -7,7 +7,7 @@ import { getGalleryItems, getNewsArticles } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "News and updates",
-  description: "Sample newsroom briefings for the Agapetus Omar leadership preview.",
+  description: "News and updates from Agapetus Omar for Kilifi North.",
 };
 
 export default async function NewsPage() {
@@ -19,7 +19,7 @@ export default async function NewsPage() {
       <PageHero
         eyebrow="News"
         title="Updates"
-        description="Sample briefings for the listing, filters, and article pages. They are not published statements."
+        description="Updates on community, youth, livelihoods, health, and education."
         image={hero.image}
         imageAlt={hero.imageAlt}
         crumbs={[

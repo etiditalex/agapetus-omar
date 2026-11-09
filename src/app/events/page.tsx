@@ -7,7 +7,7 @@ import { getEvents, getGalleryItems } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Events",
-  description: "Upcoming and past sample engagements for the Agapetus Omar leadership preview.",
+  description: "Upcoming and past engagements with Agapetus Omar in Kilifi North.",
 };
 
 export default async function EventsPage() {
@@ -19,7 +19,7 @@ export default async function EventsPage() {
       <PageHero
         eyebrow="Diary"
         title="Events"
-        description="Upcoming and past entries are samples. They do not confirm a booking, a host, or a seat."
+        description="Upcoming and past engagements across Kilifi."
         image={hero.image}
         imageAlt={hero.imageAlt}
         crumbs={[

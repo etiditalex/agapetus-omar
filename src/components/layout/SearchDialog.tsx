@@ -44,7 +44,7 @@ export function SearchDialog({
       <div className="relative mx-auto flex max-h-[100dvh] w-full max-w-3xl flex-col bg-ivory shadow-2xl sm:mt-16 sm:max-h-[calc(100dvh-8rem)]">
         <div className="flex items-center justify-between border-b border-line px-5 py-4">
           <h2 id={titleId} className="font-serif text-2xl text-ink">
-            Search the preview
+            Search
           </h2>
           <button type="button" onClick={onClose} className="grid h-10 w-10 place-items-center text-ink" aria-label="Close search">
             <X className="h-5 w-5" />
@@ -71,7 +71,7 @@ export function SearchDialog({
           {query.trim().length < 2 ? (
             <p className="text-sm leading-relaxed text-muted">Type at least two letters. Results stay on this device and are not saved.</p>
           ) : results.length === 0 ? (
-            <p className="text-sm text-muted">No sample records match “{query.trim()}”.</p>
+            <p className="text-sm text-muted">No records match “{query.trim()}”.</p>
           ) : (
             <ul className="divide-y divide-line">
               {results.map((result) => (

@@ -8,7 +8,7 @@ import { getGalleryItems, getSiteConfig } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Placeholder contact details and a demonstration form for the Agapetus Omar leadership preview.",
+  description: "Contact Agapetus Omar for Kilifi North. Phone 0790 323 693.",
 };
 
 export default async function ContactPage() {
@@ -20,7 +20,7 @@ export default async function ContactPage() {
       <PageHero
         eyebrow="Contacts"
         title="Contact"
-        description="Office details below are placeholders. The form checks your entries and then stops. It does not send or store them."
+        description="Phone, email, and a message form for Kilifi North."
         image={hero.image}
         imageAlt={hero.imageAlt}
         crumbs={[
@@ -61,9 +61,6 @@ export default async function ContactPage() {
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl">Get in touch</h2>
             <p className="mt-4 text-sm leading-relaxed text-muted">{site.contact.note}</p>
-            <p className="mt-4 text-sm leading-relaxed text-muted">
-              A precise map pin will be added when an office address is confirmed. This page is not a live map.
-            </p>
             <div id="connect" className="mt-8">
               <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-ink">Social profiles</h3>
               <ul className="mt-4 flex gap-3">
@@ -73,7 +70,7 @@ export default async function ContactPage() {
                       href={item.href}
                       target="_blank"
                       rel="noreferrer"
-                      aria-label={`${item.label} placeholder profile`}
+                      aria-label={item.label}
                       className="grid h-11 w-11 place-items-center border border-line bg-white text-ink transition hover:border-teal hover:text-teal"
                     >
                       <SocialIcon name={item.icon} />
@@ -81,7 +78,6 @@ export default async function ContactPage() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-3 text-xs text-muted">These profiles open example.com. They are not live accounts.</p>
             </div>
           </div>
           <ContactForm />

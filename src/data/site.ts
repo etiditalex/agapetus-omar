@@ -42,11 +42,11 @@ export const siteConfig: SiteConfig = {
   ],
   contact: {
     officeName: "County liaison office",
-    addressLines: ["Address placeholder", "Kilifi County, Kenya"],
+    addressLines: ["Kilifi North Constituency", "Kilifi County, Kenya"],
     phone: "0790 323 693",
     email: "office@agapetusomar.example",
     hours: "Monday to Friday, 8:00–17:00 EAT",
-    note: "The phone number is the one printed on the Manifesto 2027 poster. Email, office address, and hours are still placeholders and do not connect to a live office.",
+    note: "Kilifi North Constituency. Phone 0790 323 693.",
   },
   social: [
     { label: "Facebook", href: "https://example.com", icon: "facebook" },

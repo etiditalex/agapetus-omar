@@ -8,13 +8,13 @@ import { getInitiatives, getUpcomingEvents } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Community engagement",
-  description: "Sample community initiatives and public participation formats for Kilifi County.",
+  description: "Community engagement and public participation with Agapetus Omar in Kilifi.",
 };
 
 const steps = [
   {
     title: "Hear it in the ward",
-    copy: "A sample baraza, landing-site visit, or market morning. Nothing on this list has been convened.",
+    copy: "A baraza, a landing-site visit, or a market morning, held where people already gather.",
   },
   {
     title: "Write the note",
@@ -22,7 +22,7 @@ const steps = [
   },
   {
     title: "Bring the note back",
-    copy: "The return is the point of the format. This preview has no notes to return yet.",
+    copy: "The return visit is the point: a short note people can compare with what they remember saying.",
   },
 ];
 
@@ -35,7 +35,7 @@ export default async function CommunityPage() {
       <PageHero
         eyebrow="Community"
         title="Engagement"
-        description="Illustrative ways to meet, listen, and publish what was heard. These are formats, not a record of attendance."
+        description="Meet, listen, and publish what was heard."
         image={hero.image}
         imageAlt={hero.imageAlt}
         crumbs={[
@@ -72,7 +72,7 @@ export default async function CommunityPage() {
       </section>
       <section className="bg-sand py-16 sm:py-20">
         <Container>
-          <h2 className="text-4xl font-bold tracking-tight text-ink">Sample diary</h2>
+          <h2 className="text-4xl font-bold tracking-tight text-ink">Diary</h2>
           <ul className="mt-8 divide-y divide-line border-y border-line">
             {events.map((event) => {
               const when = formatEventWhen(event.date);

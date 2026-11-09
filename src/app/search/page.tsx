@@ -7,7 +7,7 @@ import { searchRecords } from "@/lib/search";
 
 export const metadata: Metadata = {
   title: "Search",
-  description: "Search the Agapetus Omar leadership preview.",
+  description: "Search the Agapetus Omar website.",
 };
 
 export default async function SearchPage({
@@ -25,7 +25,7 @@ export default async function SearchPage({
       <PageHero
         eyebrow="Search"
         title="Search"
-        description="Search runs against the local preview content. It does not query an external service."
+        description="Search pages, news, events, and priorities."
         image={hero.image}
         imageAlt={hero.imageAlt}
         crumbs={[

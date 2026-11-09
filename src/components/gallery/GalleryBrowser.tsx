@@ -57,7 +57,7 @@ export function GalleryBrowser({ items }: { items: GalleryItem[] }) {
           </button>
         ))}
       </div>
-      <p className="mt-6 text-sm text-muted">{visible.length} items in this view. Photographs are illustrative.</p>
+      <p className="mt-6 text-sm text-muted">{visible.length} items in this view.</p>
       {visible.length === 0 ? (
         <p className="mt-8 text-muted">Nothing in this filter.</p>
       ) : (
@@ -112,15 +112,14 @@ export function GalleryBrowser({ items }: { items: GalleryItem[] }) {
                 <div className="absolute inset-0 grid place-items-center bg-deep/55 p-6 text-center text-white">
                   <div>
                     <Play className="mx-auto h-10 w-10" aria-hidden="true" />
-                    <p className="mt-4 max-w-md font-serif text-2xl">Video playback is not connected</p>
-                    <p className="mt-2 text-sm text-white/80">This lightbox is a frontend placeholder. No video file is hosted or streamed.</p>
+                    <p className="mt-4 max-w-md font-serif text-2xl">Video</p>
                   </div>
                 </div>
               ) : null}
             </div>
             <figcaption className="mt-4 text-white">
               <p className="text-[11px] uppercase tracking-[0.16em] text-gold-soft">
-                {current.category} · {formatDate(current.date)} · Placeholder
+                {current.category} · {formatDate(current.date)}
               </p>
               <p className="mt-2 font-serif text-xl sm:text-2xl">{current.title}</p>
               <p className="mt-2 text-sm text-white/75">{current.caption}</p>

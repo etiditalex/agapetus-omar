@@ -61,19 +61,19 @@ export function NewsExplorer({ articles }: { articles: NewsArticle[] }) {
           }}
         >
           <label htmlFor="news-search" className="sr-only">
-            Search sample stories
+            Search stories
           </label>
           <input
             id="news-search"
             name="q"
             defaultValue={query}
-            placeholder="Search sample stories"
+            placeholder="Search stories"
             className="w-full border border-line bg-white px-4 py-3 text-sm outline-none focus:border-teal"
           />
         </form>
       </div>
       <p className="mt-6 text-sm text-muted">
-        {result.total === 0 ? "No stories match." : `Showing ${result.from}–${result.to} of ${result.total} sample stories.`}
+        {result.total === 0 ? "No stories match." : `Showing ${result.from}–${result.to} of ${result.total}.`}
       </p>
       <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {result.items.map((article) => (

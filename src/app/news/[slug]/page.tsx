@@ -44,7 +44,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
       <section className="py-16 sm:py-20">
         <Container>
           <DetailArticle
-            eyebrow="Placeholder briefing"
+            eyebrow="News"
             summary={`${formatDate(article.date)} · ${article.location} · ${article.readMinutes} min read · ${article.author}`}
             paragraphs={article.paragraphs}
             image={article.image}
@@ -52,11 +52,11 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
             meta={[
               { label: "Category", value: article.category },
               { label: "Location", value: article.location },
-              { label: "Status", value: "Sample story — not an official statement" },
+              { label: "Author", value: article.author },
             ]}
           />
           <div className="mt-16">
-            <h2 className="text-3xl font-bold text-ink">Related sample stories</h2>
+            <h2 className="text-3xl font-bold text-ink">Related stories</h2>
             <div className="mt-8 grid gap-8 md:grid-cols-3">
               {related.map((item) => (
                 <NewsCard key={item.slug} article={item} />
